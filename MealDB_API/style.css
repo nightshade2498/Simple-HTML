@@ -1,0 +1,119 @@
+body {
+    font-family: sans-serif;
+    background-color: #f8dd74;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  h1 {
+    color: #3b2d64;
+    margin-bottom: 30px;
+  }
+  .container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1400px;
+    text-align: center;
+  }
+  
+  #charactersList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        'name image'
+        'house image';
+    text-align: left;
+  }
+  
+  .character > h2 {
+    grid-area: name;
+    margin-bottom: 0px;
+  }
+  
+  .character > p {
+    grid-area: house;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  .character > img {
+    max-height: 100px;
+    grid-area: image;
+  }
+  
+  #searchBar {
+    width: 100%;
+    height: 57px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+  
+  #searchWrapper {
+    position: relative;
+  }
+  
+  #searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+  /**************** Navbar Styles ****************/
+  #navbar-font a {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #3b2d64;
+    text-decoration: none;
+  }
+  #navbar-font  {
+  
+     display: flex;
+      flex-wrap: nowrap;
+      align-content: space-around;
+      justify-content: space-between;
+      background: #ffb5925e;
+      
+      padding: 30px;
+  }
+  .nav-logo img {
+    width: 120px;
+  }
+ /**************** Meal Search (Input + Button) Styles ****************/
+#meal-input {
+    height: 6vh;
+    border: none;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  #meal-submit {
+    width: 12vh;
+    height: 6vh;
+    border: none;
+    color: #ffffff;
+    background-color: #3b2d64;
+    border-radius: 0 10px 10px 0;
+  }
+  #meal-submit:hover {
+    color: #f8dd74;
+  }
+  
+@media only screen and (max-width: 400px) {
+    header {
+     display: none;
+    }
+  } 

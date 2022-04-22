@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Hungry Monster | Meal finder App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+
+        <!-- ================ Navbar Area ================ -->
+    <header class="container">
+      <div class="header-style mt-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand nav-logo" href="#">
+              <img src="images/logo.svg" alt="" />
+            </a>
+       
+           
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div id="navbar-font" class="navbar-nav ms-auto">
+                <a class="nav-link ms-3 me-3" href="#">Home</a>
+                <a class="nav-link ms-3 me-3" href="#">About</a>
+                <a class="nav-link ms-3 me-3" href="#">Recipes</a>
+                <a class="nav-link ms-3 me-3" href="#">Blog</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+        <div class="container">
+            <h1>&#x2728; Meal finder app&#x2728;</h1>
+            <div id="searchWrapper">
+                <input
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="search by category"
+                />
+            </div>
+            <ul id="charactersList"></ul>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
